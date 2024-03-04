@@ -1,0 +1,50 @@
+<template>
+    <header class="container mx-auto px-5 flex items-center justify-between pb-6 pt-24">
+        <div class=" text-2xl font-bold">Exclusive</div>
+        <nav>
+            <ul class="flex items-center gap-x-12">
+                <li>
+                    <HeaderLink link="#" text="Home" />
+                </li>
+                <li>
+                    <HeaderLink link="#" text="Contact" />
+                </li>
+                <li>
+                    <HeaderLink link="#" text="About" />
+                </li>
+                <li>
+                    <HeaderLink link="#" text="Sign Up" />
+                </li>
+            </ul>
+        </nav>
+        <div class="flex items-center gap-x-6">
+
+
+
+            <div class="relative">
+                <input placeholder="What are you looking for?"
+                    class=" rounded-md min-w-64 pr-10 py-2.5 pl-5 outline-none bg-[#f5f5f5]" type="text">
+                <button class="absolute top-1/2 transform -translate-y-1/2 right-4">
+                    <SearchIcon />
+                </button>
+            </div>
+
+
+
+            <a href="#">
+                <HeartIcon />
+            </a>
+            <a href="#">
+                <CartIcon />
+            </a>
+        </div>
+    </header>
+</template>
+
+<script setup>
+import CartIcon from './Icons/CartIcon.vue';
+import HeartIcon from './Icons/HeartIcon.vue';
+import SearchIcon from './Icons/SearchIcon.vue';
+import HeaderLink from './UiKit/HeaderLink.vue';
+
+</script>
