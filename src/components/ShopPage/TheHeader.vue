@@ -4,7 +4,7 @@
         <nav>
             <ul class="flex items-center gap-x-12">
                 <li>
-                    <HeaderLink link="#" text="Home" />
+                    <HeaderLink link="/" text="Home" />
                 </li>
                 <li>
                     <HeaderLink link="#" text="Contact" />
@@ -34,14 +34,15 @@
             <a href="#">
                 <HeartIcon />
             </a>
-            <a href="#">
+            <RouterLink to="/cart">
                 <CartIcon />
-            </a>
+            </RouterLink>
         </div>
     </header>
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router';
 import CartIcon from './Icons/CartIcon.vue';
 import HeartIcon from './Icons/HeartIcon.vue';
 import SearchIcon from './Icons/SearchIcon.vue';

@@ -10,6 +10,11 @@ import CategoriesDropDown from './UiKit/CategoriesDropDown.vue';
             { title: 'Shirts', link: '#' },
             { title: 'Шлепенцы', link: '#' }
         ]" />
+        <CategoriesDropDown categoryTitle="Woman`s Fashion" :links="[
+            { title: 'Coats', link: '#' },
+            { title: 'Shirts', link: '#' },
+            { title: 'Шлепенцы', link: '#' }
+        ]" />
 
         <a href="#">Electronics</a>
         <a href="#">Home & Lifestyle</a>
