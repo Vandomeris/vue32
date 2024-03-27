@@ -32,6 +32,7 @@ onMounted(async () => {
     await getProducts()
 })
 
+
 function addToCart(product) {
     cartStore.cart.push(product)
     console.log(cartStore.cart);
